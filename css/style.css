@@ -9,6 +9,13 @@ html {
   box-sizing: border-box;
 }
 
+p {
+  font-family: 'Raleway';
+  font-size: 17px;
+  line-height: 1.5rem;
+  letter-spacing: .1rem;
+}
+
 .container {
   margin: 0 auto;
   width: 95%;
@@ -137,8 +144,8 @@ html {
   position: relative;
 }
 
-#about, #posts {
-  margin-top: 48px;
+section {
+  margin: 36px 0;
 }
 
 #about .grid {
@@ -161,32 +168,35 @@ html {
 }
 
 #blog-button {
+  margin: 24px auto !important;
+}
+
+.button {
   padding: 10px 18px;
   text-transform: uppercase;
   background: transparent;
   border: 0;
   color: white;
-  background: #1bbecf;
+  background: #f5ac10;
   font-weight: 500;
   font-size: 15px;
   display: block;
-  margin: 24px auto !important;
+  margin: 24px 0;
   transform: skew(21deg);
   cursor: pointer;
 }
 
-#blog-button:hover {
-  background: #3acada;
+.button:hover {
+  background: #fcbe3a;
   transition-duration: 0.25s;
 }
 
-#blog-button:active {
-  background: #3acada;
+.button:active {
   transform: scale(1.1) skew(21deg);
   transition-duration: 0.25s;
 }
 
-#blog-button span {
+.button span {
   display: inline-block;
   transform: skew(-21deg);
 }
@@ -216,7 +226,7 @@ html {
   }
 }
 
-.post {
+.post-preview {
   max-width: 70%;
   width: fit-content;
   box-shadow: 2px 2px 20px 0px #ddd;
@@ -226,35 +236,29 @@ html {
 }
 
 @media (min-width: 769px) {
-  .post {
+  .post-preview {
     max-width: 100%;
     margin: 16px 12px;
   }
 
-  .post:first-child {
+  .post-preview:first-child {
     margin-left: 0;
   }
 
-  .post:last-child {
+  .post-preview:last-child {
     margin-right: 0;
   }
 }
 
-.post:hover {
-  transform: scale(1.02);
-  transition-duration: 0.3s;
-  box-shadow: 2px 2px 40px 0px rgb(223, 223, 223);
-}
-
-.post img {
+.post-preview img {
   width: 100%;
 }
 
-.post-title {
+.post-preview-title {
   padding: 0 24px;
 }
 
-.post-description {
+.post-preview-description {
   padding: 0 24px 24px;
 }
 
@@ -264,4 +268,44 @@ html {
 
 .about-text:first-child {
   margin-top: 0;
+}
+
+#footer {
+  background: rgb(71, 71, 71);
+  border-top: 2px solid #1bbecf;
+  color: white;
+  padding: 32px;
+  margin-bottom: 0;
+}
+
+#footer .flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+@media (min-width: 524px) {
+  #footer {
+    padding: 20px;
+  }
+  #footer .flex {
+    flex-direction: row;
+  }
+}
+
+#footer h2,
+#footer h5 {
+  margin: 0;
+}
+
+@media (max-width: 523px) {
+  #footer h5 {
+    margin-top: 24px;
+  }
+}
+
+.post-title {
+  margin-bottom: 0;
+  color: darkslateblue;
 }
