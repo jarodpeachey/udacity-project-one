@@ -64,6 +64,11 @@ p {
   margin: 0;
 }
 
+.navbar-title a {
+  color: white;
+  text-decoration: none;
+}
+
 .navbar-left {
   width: 100%;
   text-align: center;
@@ -146,6 +151,7 @@ p {
 
 section {
   margin: 36px 0;
+  padding: 48px 0;
 }
 
 #about .grid {
@@ -201,6 +207,10 @@ section {
   transform: skew(-21deg);
 }
 
+#posts {
+  background: rgb(238, 238, 238);
+}
+
 #posts a {
   text-decoration: none !important;
   color: black;
@@ -221,7 +231,7 @@ section {
 
 @media (min-width: 1200px) {
   #posts .grid {
-    grid-template-rows: 1fr 1fr;
+    grid-template-rows: 100%;
     grid-template-columns: 1fr 1fr 1fr 1fr;
   }
 }
@@ -233,6 +243,7 @@ section {
   border-radius: 8px;
   margin: 16px auto;
   border: 1px solid #ddd;
+  background: white;
 }
 
 @media (min-width: 769px) {
@@ -241,13 +252,13 @@ section {
     margin: 16px 12px;
   }
 
-  .post-preview:first-child {
+  /* .post-preview:first-child {
     margin-left: 0;
   }
 
   .post-preview:last-child {
     margin-right: 0;
-  }
+  } */
 }
 
 .post-preview img {
@@ -310,11 +321,26 @@ section {
   color: darkslateblue;
 }
 
+blockquote {
+	border-left: 3px solid #ccc;
+  padding-left: 48px;
+  margin-left: 0;
+  font-weight: 500;
+  font-size: 17px;
+  margin: 36px 0;
+}
+
+blockquote footer {
+  margin-top: 24px;
+  font-size: 15px;
+}
+
 .author-box {
   width: 100%;
   background: rgb(233, 233, 233);
   border: 2px solid #ccc;
   padding: 12px;
+  margin-top: 48px;
 }
 
 .author-flex {
@@ -358,8 +384,7 @@ section {
   }
 
   .author-image {
-    width: 75px;
-    height: 75px;
+    width: 75px !important;
   }
 
   .author-details {
