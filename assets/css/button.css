@@ -1,0 +1,33 @@
+#blog-button {
+  margin: 24px auto !important;
+}
+
+.button {
+  padding: 10px 18px;
+  text-transform: uppercase;
+  background: transparent;
+  border: 0;
+  color: white;
+  background: #f5ac10;
+  font-weight: 500;
+  font-size: 15px;
+  display: block;
+  margin: 24px 0;
+  transform: skew(21deg);
+  cursor: pointer;
+}
+
+.button:hover {
+  background: #fcbe3a;
+  transition-duration: 0.25s;
+}
+
+.button:active {
+  transform: scale(1.1) skew(21deg);
+  transition-duration: 0.25s;
+}
+
+.button span {
+  display: inline-block;
+  transform: skew(-21deg);
+}
