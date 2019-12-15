@@ -34,7 +34,13 @@
   margin: 0;
 }
 
-@media (min-width: 576px) {
+@media (max-width: 660px) {
+  .hidden-below-tablet {
+    display: none;
+  }
+}
+
+@media (min-width: 860px) {
   #navbar .container {
     display: flex;
     align-items: center;

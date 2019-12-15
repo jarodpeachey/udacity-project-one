@@ -27,10 +27,10 @@ blockquote footer {
 
 .author-box {
   width: 100%;
-  background: rgb(233, 233, 233);
+  background: #f7f7f7;
   border: 2px solid #ccc;
   padding: 12px;
-  margin-top: 48px;
+  margin-top: 32px;
 }
 
 .author-flex {
@@ -63,6 +63,26 @@ blockquote footer {
 
 .author-bio {
   margin: 0;
+}
+
+.author-social {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  margin-top: 12px;
+}
+
+.author-social .social-icon {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.author-social .social-icon img {
+  width: 20px;
+  height: 20px;
 }
 
 @media (min-width: 500px) {
@@ -148,4 +168,53 @@ blockquote footer {
 
 .linkedin {
   background: #0e76a8;
+}
+
+.more-posts {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: space-between;
+  margin-top: 32px;
+}
+
+.more-posts .column {
+  width: 50%;
+  background: #f7f7f7;
+  margin: 0 0 0 18px;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 18px 12px;
+  border: 2px solid #ccc;
+}
+
+.more-posts .column.left {
+  flex-direction: row-reverse;
+}
+
+.more-posts .column:first-child {
+  margin: 0 18px 0 0;
+}
+
+.more-posts-title {
+  color: black;
+  margin: 0;
+  font-size: 18px;
+  font-weight: bold;
+  margin: 0 16px 0 0;
+}
+
+.more-posts .column.left .more-posts-title {
+  margin: 0 0 0 16px;
+}
+
+.more-posts-arrow {
+  width: 40px;
+  height: 40px;
+}
+
+.hidden {
+  visibility: hidden;
 }
